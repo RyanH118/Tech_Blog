@@ -1,0 +1,18 @@
+{{> newPost}}
+
+<h1>Your Previous Posts</h1>
+    {{#if posts.length}}
+        <div class="posts">
+            {{#each posts}}
+                <div class="card">
+                    <h2>{{title}}</h2>
+                    <p>{{content}}</p>
+                </div>
+            {{/each}}
+        </div>
+    {{else}}
+        <p>No posts found.</p>
+    {{/if}}
+
+   
+   {{> editPost}}
