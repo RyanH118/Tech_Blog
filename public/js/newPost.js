@@ -16,7 +16,7 @@ const newPostFormHandler = async (event) => {
     // Check if the request was successful
     if (response.ok) {
       // Redirect to the dashboard or any other page
-      document.location.replace("/");
+      document.location.replace("/dashboard");
       console.log("Post created successfully");
     } else {
       // Display an alert if there was an error

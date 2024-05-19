@@ -23,7 +23,7 @@ router.get("/", withAuth, async (req, res) => {
     const posts = userData.posts.map((post) => post.get({ plain: true }));
 
     // Render the dashboard template with posts data
-    res.render("dashboard", { posts, loggedIn: true });
+    res.render("dashboard", { posts, logged_in: true });
   } catch (err) {
     res.status(500).json(err);
   }
